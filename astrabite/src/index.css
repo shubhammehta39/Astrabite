@@ -12,6 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  /* background: rgb(32,22,122);
+background: linear-gradient(142deg, rgba(32,22,122,1) 11%, rgba(79,14,133,1) 33%, rgba(80,0,87,1) 59%, rgba(38,7,111,1) 83%); */
+/* background-image: ; */
 }
 
 a {
@@ -29,6 +32,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+    
 }
 
 h1 {
