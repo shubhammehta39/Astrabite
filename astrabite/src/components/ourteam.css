@@ -32,7 +32,10 @@
   .card b {
     position: absolute;
     inset: 6px;
-    background: rgba(0, 0, 0, 0.6);
+    /* background: rgba(0, 0, 0, 0.6); */
+    background-image: url('../assets/bruh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 2;
   }
   
