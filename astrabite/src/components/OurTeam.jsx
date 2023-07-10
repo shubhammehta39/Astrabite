@@ -1,5 +1,6 @@
 import React from 'react'
 import "./ourteam.css"
+import bruh from "../assets/bruh.jpg"
 
 const OurTeam = () => {
     
@@ -8,9 +9,7 @@ const OurTeam = () => {
       <h3 class='pb-20 font-bold text-5xl'>Meet our Team</h3>
       <div class="card">
   <b></b>
-  <div class="content" style={{
-  
-  }}>
+  <div class="content" >
     <p class="title">Gaj Joshi<br /><span>Founder</span></p>
     <ul class="sci">
       <li>
