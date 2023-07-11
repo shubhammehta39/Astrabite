@@ -1,10 +1,12 @@
 import React from 'react'
 import "./ourteam.css"
 import bruh from "../assets/bruh.jpg"
-
-const OurTeam = () => {
+import { Grid, IconButton, Typography, Button } from '@mui/material'
+;const OurTeam = () => {
     
   return (
+    <>
+      <Grid container spacing={3}></Grid>
     <div class="p-10">
       <h3 class='pb-20 font-bold text-5xl'>Meet our Team</h3>
       <div class="card">
@@ -40,6 +42,8 @@ const OurTeam = () => {
 </div>
 
     </div>
+
+    </>
   )
 }
 
