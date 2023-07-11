@@ -1,5 +1,10 @@
 import React from "react";
 import "./services.css"
+import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
+import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
+import AnimationIcon from '@mui/icons-material/Animation';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
 
 const Services = () => {
   return (
@@ -14,7 +19,11 @@ const Services = () => {
           <div class="container">
             <div class="box r items-center ">
               <div class="items-center content-center">
-              <span class="title text-center font-bold text-align-center justify-content-center">VFX</span>
+                <div>
+
+               <AutoFixHighIcon sx={{ fontSize: 60,margin:3}}/>
+                </div>
+              <span class="title text-center font-bold text-align-center justify-content-center  ">VFX</span>
               </div>
             </div>
           </div>
@@ -22,7 +31,13 @@ const Services = () => {
           <div class="container">
             <div class="box r items-center ">
               <div class="items-center content-center">
-              <span class="title text-center font-bold text-align-center justify-content-center">Game <br />  Dev</span>
+                <div>
+
+                <VideogameAssetIcon sx={{ fontSize: 60,margin:3, marginLeft:6}}/>
+                </div>
+              <span class="title text-center font-bold text-align-center justify-content-center" style={{paddingLeft:'2px'}}>Game Dev</span> 
+              
+
               </div>
             </div>
           </div>
@@ -30,7 +45,11 @@ const Services = () => {
           <div class="container">
             <div class="box r items-center ">
               <div class="items-center content-center">
-              <span class="title text-center font-bold text-align-center justify-content-center">3-D <br />Modelling</span>
+                <div>
+<ViewInArIcon sx={{ fontSize: 60,margin:2, marginLeft:6}}/>
+                </div>
+              <span class="title text-center font-bold align-center justify--center " style={{paddingLeft:45}}>3-D <br />Modelling</span>
+
               </div>
             </div>
           </div>
@@ -38,6 +57,9 @@ const Services = () => {
           <div class="container">
             <div class="box r items-center ">
               <div class="items-center content-center">
+                <div>
+                  <AnimationIcon sx={{ fontSize: 60,margin:3, marginLeft:8}}/>
+                </div>
               <span class="title text-center font-bold text-align-center justify-content-center">Animations</span>
               </div>
             </div>
@@ -46,6 +68,9 @@ const Services = () => {
           <div class="container">
             <div class="box r items-center ">
               <div class="items-center content-center">
+                <div>
+                  <DesignServicesIcon  sx={{ fontSize: 60,margin:2, marginLeft:6}}/>
+                </div>
               <span class="title text-center font-bold text-align-center justify-content-center">Graphic <br />Designing</span>
               </div>
             </div>
