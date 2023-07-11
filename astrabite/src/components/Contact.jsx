@@ -77,7 +77,9 @@ export default function Contact() {
   }
   return (
     <>
-    <div style={{backgroundColor:"", paddingTop:'200px'}}>
+    <div style={{backgroundColor:"", paddingTop:'100px'}}>
+    <h3 className="pb-20 font-bold text-5xl px-12">Contact Us</h3>
+
       <FormControl>
       <Grid container rowSpacing={3} sx={{backgroundColor:""}}>
         <Grid item md={6} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
