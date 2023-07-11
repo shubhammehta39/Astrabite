@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <Router>
+    {/* <Router>
       <Routes>
         <Route path="/" element={<About/>} />
         <Route path="/home" element={<Home/>} />
@@ -18,7 +18,12 @@ function App() {
         <Route path="/ourteam" element={<OurTeam/>} />
         <Route path='/navbar' element={<Navbar/>} />
       </Routes>  
-    </Router>
+    </Router> */}
+    <Navbar/>
+    <About/>
+    <Home/>
+    <OurTeam/>
+    <Services/>
     </>
   )
 }

@@ -13,7 +13,6 @@ export default function About() {
             Game dev comm
           </h3>
         </div>
-        <div>hi</div>
       </div>
     </>
   );
