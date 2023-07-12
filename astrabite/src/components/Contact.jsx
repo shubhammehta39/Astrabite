@@ -117,12 +117,12 @@ export default function Contact() {
                 <IconButton>
                   <LocationOnIcon sx={{ color: "red" }}></LocationOnIcon>
                 </IconButton>
-                <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75", paddingBottom : "50px" }}>
+                <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"white", paddingBottom : "50px" }}>
                   Andheri west
                 </div>
               </div>
               <div>
-                <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75", paddingTop: "100px"}}>
+                <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"white", paddingTop: "100px"}}>
                   <a href="https://goo.gl/maps/hfN21Ekrruinavqz7" target="_blank">
                   <img src="" style={{width:"70%", paddingTop:"30px"}}/>
                   </a>

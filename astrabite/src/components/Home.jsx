@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="mt-12 px-5 sm:px-10">
-        <h3 className="text-5xl font-bold">About US</h3>
+        <h3 className="text-5xl font-bold px-9  ">About US</h3>
 
         <div className="flex flex-col sm:flex-row p-5 sm:p-10 pl-0">
           <div className="w-full sm:w-1/2">
