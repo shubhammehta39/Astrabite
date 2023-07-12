@@ -5,16 +5,15 @@ import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import AnimationIcon from '@mui/icons-material/Animation';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
-
+import { motion } from "framer-motion"
 const Services = () => {
   return (
-    <div>
       <div>
         <div className="mx-auto py-20 lg:px-12 sm:px-5 sm:py-10">
           <h3 className="pb-20 font-bold text-5xl">Our Services</h3>
 
           <div className="flex flex-wrap justify-center">
-            <div className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+            <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:2,scale:1}} viewport={{once:true}} className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className="box r items-center">
                 <div className="items-center content-center">
                   <div>
@@ -25,7 +24,7 @@ const Services = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             <div className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className="box r items-center">
@@ -92,7 +91,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
