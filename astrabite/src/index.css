@@ -15,9 +15,13 @@
   /* background: rgb(32,22,122);
 background: linear-gradient(142deg, rgba(32,22,122,1) 11%, rgba(79,14,133,1) 33%, rgba(80,0,87,1) 59%, rgba(38,7,111,1) 83%); */
 /* background-image: ; */
-background: #ad5389;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+/* background: #ad5389;  
+background: -webkit-linear-gradient(to top, #3c1053, #ad5389);  
+background: linear-gradient(to top, #3c1053, #ad5389); */
+
+background-color: black;
 
 }
 
