@@ -23,7 +23,8 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="w-full sm:w-1/2 flex justify-center">
+          <div class="basis-1/2 place-self-center" style={{marginLeft:'160px'}}>
+           
             <motion.div
               animate={{
                 scale: [1, 2, 2, 1, 1],
