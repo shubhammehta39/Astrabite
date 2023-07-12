@@ -13,7 +13,7 @@ const Services = () => {
           <h3 className="pb-20 font-bold text-5xl">Our Services</h3>
 
           <div className="flex flex-wrap justify-center">
-            <motion.div initial={{opacity:0,scale:0}} whileInView={{opacity:2,scale:1}} viewport={{once:true}} className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+            <motion.div initial={{opacity:0,scale:0,y:-10}} whileInView={{opacity:2,scale:1,y:0}} transition={{delay:0.3}} viewport={{once:true}} className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className="box r items-center">
                 <div className="items-center content-center">
                   <div>
@@ -26,7 +26,7 @@ const Services = () => {
               </div>
             </motion.div>
 
-            <div className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
+            <motion.div initial={{opacity:0,scale:0,y:10}} whileInView={{opacity:2,scale:1,y:0}} transition={{delay:0.3}} viewport={{once:true}} className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className="box r items-center">
                 <div className="items-center content-center">
                   <div>
@@ -39,7 +39,7 @@ const Services = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             <div className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className="box r items-center">
