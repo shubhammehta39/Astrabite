@@ -103,15 +103,15 @@ export default function Contact() {
                 <EmailIcon sx={{ color: "red" }}></EmailIcon>
               </IconButton>
               <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
-                mail.com
+                hr@astrabite.com
               </div>
               <div style={{ padding: "20px", paddingLeft: "0px" }}>
-                <IconButton>
+                {/* <IconButton>
                   <CallIcon sx={{ color: "red" }}></CallIcon>
-                </IconButton>
-                <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
+                </IconButton> */}
+                {/* <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
                   9999999999
-                </div>
+                </div> */}
               </div>
               <div>
                 <IconButton>

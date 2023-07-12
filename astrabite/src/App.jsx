@@ -11,15 +11,6 @@ function App() {
 
   return (
     <>
-    {/* <Router>
-      <Routes>
-        <Route path="/" element={<About/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/services" element={<Services/>} />\
-        <Route path="/ourteam" element={<OurTeam/>} />
-        <Route path='/navbar' element={<Navbar/>} />
-      </Routes>  
-    </Router> */}
     <Navbar/>
     <About/>
     <Home/>
