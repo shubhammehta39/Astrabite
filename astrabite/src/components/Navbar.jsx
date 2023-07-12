@@ -33,26 +33,36 @@ export default function Navbar() {
     }
 
   };
-  const s1 = st==1?{borderBottom:"2px solid black",color:"black"}:{}
-  const s2 = st==2?{borderBottom:"2px solid black",color:"black"}:{}
-  const s3 = st==3?{borderBottom:"2px solid black",color:"black"}:{}
-  const s4 = st==4?{borderBottom:"2px solid black",color:"black"}:{}
+  const s1 = st==1?{borderBottom:"2px solid black",color:"white"}:{color:"white"}
+  const s2 = st==2?{borderBottom:"2px solid black",color:"white"}:{color:"white"}
+  const s3 = st==3?{borderBottom:"2px solid black",color:"white"}:{color:"white"}
+  const s4 = st==4?{borderBottom:"2px solid black",color:"white"}:{color:"white"}
   const style=s==0?{
     position:"sticky",
     zIndex:"5  ",
     top:0,
     backgroundColor:"",
+
   }:{
     position:"sticky",
     zIndex:"5  ",
     top:0,
     backgroundColor:"white",
 
+
+    background: "rgba( 157, 153, 153, 0.5 )",
+boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+backdropFilter: "blur( 8px )",
+webkitBackdropFilter: "blur( 11px )",
+// borderRadius:" 10px",
+border: "1px solid rgba( 255, 255, 255, 0.18 )",
+
+
   }
 
   return (
     <div style={{position:"sticky",zIndex:"5  ",top:0,backgroundColor:"",paddingTop:"0px"}}>
-      <header class="w-full h-10 flex justify-center bg-white">
+      <header class="w-full h-16 flex justify-center  " style={style}>
         <nav class="w-4/5 flex justify-between items-center font-bebas">
           <h1 class="text-3xl text-color-black">Astrabite</h1>
           <ul class="md:flex gap-x-5 text-xl hidden">
