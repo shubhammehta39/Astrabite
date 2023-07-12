@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <div style={{}}>
-      <header class="w-full h-20 flex justify-center absolute ">
+      <header class="w-full h-5 flex justify-center absolute ">
         <nav class="w-4/5 flex justify-between items-center font-bebas">
           <h1 class="text-3xl text-color-black">Astrabite</h1>
           <ul class="md:flex gap-x-5 text-xl hidden">
