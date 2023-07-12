@@ -9,10 +9,10 @@ import { motion } from "framer-motion"
 const Services = () => {
   return (
       <div>
-        <div className="mx-auto py-20 lg:px-12 sm:px-5 sm:py-10 md:mt-5">
-          <h3 className="pb-20 font-bold text-5xl">Our Services</h3>
+        <div className="mx-auto  py-20 lg:px-12 sm:px-5 sm:py-10 md:mt-5">
+          <h3 className="pb-20 font-bold text-5xl pl-10">Our Services</h3>
 
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-center pl-10">
             <motion.div initial={{opacity:0,scale:0,y:-10}} whileInView={{opacity:2,scale:1,y:0}} transition={{delay:0.3}} viewport={{once:true}} className="container w-full sm:w-1/2 md:w-1/3 lg:w-1/5">
               <div className="box r items-center">
                 <div className="items-center content-center">

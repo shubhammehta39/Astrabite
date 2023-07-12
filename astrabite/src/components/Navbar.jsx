@@ -42,20 +42,25 @@ export default function Navbar() {
     zIndex:"5  ",
     top:0,
     backgroundColor:"",
+    paddingTop:'20px'
 
   }:{
     position:"sticky",
     zIndex:"5  ",
     top:0,
     backgroundColor:"white",
+    
 
 
-    background: "rgba( 157, 153, 153, 0.5 )",
+    background: "rgba( 231, 227, 227, 0.35 )",
 boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-backdropFilter: "blur( 8px )",
+backdropFilter: "blur( 6.5px )",
 webkitBackdropFilter: "blur( 11px )",
 // borderRadius:" 10px",
 border: "1px solid rgba( 255, 255, 255, 0.18 )",
+
+
+// background: rgba( 231, 227, 227, 0.35 );
 
 
   }
@@ -73,7 +78,7 @@ border: "1px solid rgba( 255, 255, 255, 0.18 )",
             </a>
             <a href="#">
               <li class="cursor-pointer">
-                <div style={s2}>Movies</div>
+                <div style={s2}>Team</div>
               </li>
             </a>
             <a href="#">
@@ -83,7 +88,7 @@ border: "1px solid rgba( 255, 255, 255, 0.18 )",
             </a>
             <a href="#">
               <li class="cursor-pointer">
-                <div style={s4}>Contact Us</div>
+                <div style={s4}>Contact Us </div>
               </li>
             </a>
           </ul>
