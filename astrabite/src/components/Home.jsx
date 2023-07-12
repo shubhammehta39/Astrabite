@@ -1,15 +1,15 @@
 import React from "react";
-import {motion} from "framer-motion" 
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
-      <div class="mt-12 px-10">
-        <h3 class="text-5xl font-bold ">About US</h3>
+      <div className="mt-12 px-5 sm:px-10">
+        <h3 className="text-5xl font-bold">About US</h3>
 
-        <div class="flex flex-row p-10 pl-0">
-          <div class="basis-1/2">
-            <p class="pt-10 py-20 font-bold font-stretch">
+        <div className="flex flex-col sm:flex-row p-5 sm:p-10 pl-0">
+          <div className="w-full sm:w-1/2">
+            <p className="pt-5 sm:pt-10 pb-10 font-bold font-stretch">
               Welcome to Astrabite Gaming & Design Studios where imagination
               comes to life through stunning visual effects and captivating
               gaming experiences. With a passionate team of creative
@@ -19,7 +19,7 @@ const Home = () => {
               that exceed expectations. From breathtaking VFX to unforgettable
               gaming adventures, join us on an incredible journey where
               possibilities are limitless. Contact us today and let's bring your
-              visions to life!
+              visions to life!
             </p>
           </div>
 
@@ -32,13 +32,12 @@ const Home = () => {
                 borderRadius: ["20%", "20%", "50%", "50%", "20%"],
               }}
             >
-            
-            <img
-              class=" mb-10"
-              src="/src/assets/images.png"
-              alt="wc"
-              style={{height:'280px',width:'240px',marginLeft:'30px'}}
-            />
+              <img
+                className="mb-5 sm:mb-10"
+                src="/src/assets/images.png"
+                alt="wc"
+                style={{ height: "280px", width: "240px", marginLeft: "30px" }}
+              />
             </motion.div>
           </div>
         </div>
