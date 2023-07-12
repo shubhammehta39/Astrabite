@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import { FormControl } from '@mui/base';
 import { useState } from 'react';
+import InputAdornment from '@mui/material/InputAdornment';
 export default function Contact() {
 
   const [name,setName]=useState("");
@@ -77,87 +78,69 @@ export default function Contact() {
   }
   return (
     <>
-    <div style={{backgroundColor:"", paddingTop:'100px'}}>
-    <h3 className="pb-20 font-bold text-5xl px-12">Contact Us</h3>
-
+    <div style={{backgroundColor:"", paddingBottom:'20px',paddingTop:"20px"}}>
       <FormControl>
       <Grid container rowSpacing={3} sx={{backgroundColor:""}}>
-        <Grid item md={6} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
+        <Grid item md={7} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
           <Grid container>
             <Grid item md={3} sm={1} xs={1}></Grid>
             <Grid item md={8} sm={10} xs={10} >
-              <Typography variant='h5' sx={{ fontStyle: "bold", fontSize: "40px",color:"#9a9f75", fontWeight :"bold"}}>
-                Let’s discuss
+              <Typography variant='h5' sx={{  fontSize: "40px", fontWeight: "1000",color:"white"}}>
+                Contact Information
               </Typography>
-              <Typography variant='h5' sx={{ fontStyle: "bold", fontSize: "40px", fontWeight: "1000",color:"#9a9f75" }}>
-                a cool <span style={{ color: "red" }}>story</span>
+              <Typography variant='h5' sx={{  fontSize: "20px", fontWeight: "100",color:"white",paddingTop:"10px" }}>
+                Any questions or reamrks...
               </Typography>
-              <Typography variant="h5" sx={{ fontStyle: "bold", fontSize: "40px", fontWeight: "1000" ,color:"#9a9f75"}}>
-                together
+              <Typography variant="h5" sx={{  fontSize: "20px" ,color:"white"}}>
+                Just write us a message!!
               </Typography>
             </Grid>
             <Grid item md={1} sm={1} xs={1}></Grid>
             <Grid item md={3} sm={1} xs={1}></Grid>
-            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px" }}>
+            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px" ,paddingTop:"100px"}}>
               <IconButton>
-                <EmailIcon sx={{ color: "red" }}></EmailIcon>
+                <EmailIcon sx={{ color: "blue" }}></EmailIcon>
               </IconButton>
-              <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
-                hr@astrabite.com
-              </div>
-              <div style={{ padding: "20px", paddingLeft: "0px" }}>
-                {/* <IconButton>
-                  <CallIcon sx={{ color: "red" }}></CallIcon>
-                </IconButton> */}
-                {/* <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
-                  9999999999
-                </div> */}
+              <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"white" }}>
+                hrastrabite@gmail.com
               </div>
               <div>
                 <IconButton>
-                  <LocationOnIcon sx={{ color: "red" }}></LocationOnIcon>
+                  <LocationOnIcon sx={{ color: "blue" }}></LocationOnIcon>
                 </IconButton>
-                <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"white", paddingBottom : "50px" }}>
+                <a href="https://goo.gl/maps/hfN21Ekrruinavqz7" target="_blank">
+                <div style={{ display: "inline", fontSize: "19px", fontWeight: "800",color:"white", paddingBottom : "50px" }}>
                   Andheri west
                 </div>
+                </a>
               </div>
               <div>
-                <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"white", paddingTop: "100px"}}>
-                  <a href="https://goo.gl/maps/hfN21Ekrruinavqz7" target="_blank">
-                  <img src="" style={{width:"70%", paddingTop:"30px"}}/>
-                  </a>
-                </div>
               </div>
 
             </Grid>
             <Grid item md={1} sm={1} xs={1}></Grid>
           </Grid>
         </Grid>
-        <Grid item md={6} sx={{ paddingTop: "20px" }}>
+        <Grid item md={5} sx={{ paddingTop: "0px" }}>
+            <div class="bg-gray-200 " style={{padding:"40px",width:"60%",borderRadius:20}}>
           <Grid container>
-            <Grid item md={8} className='contactus' >
+            <Grid item md={12} className='contactus' >
               <Grid container>
-                <Grid item md={12} sm={12} xs={12} sx={{color:"#9a9f75",fontSize:"40px", fontStyle :"bold", fontWeight :"bold", paddingTop: "20px" }}>
-                  I'm interested...
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "20px" }}>
+                  <TextField value={name} onChange={(e)=>{setName(e.target.value)}} required id="standard-basic" variant="outlined" placeholder="Your name" sx={{ width: "100%" }} />
                 </Grid>
-                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={name} onChange={(e)=>{setName(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Your name" sx={{ width: "100%", input: { color: 'white' } }} />
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "20px" }}>
+                  <TextField value={email} onChange={(e)=>{setEmail(e.target.value)}} required id="standard-basic" variant="outlined" placeholder="Email" sx={{ width: "100%" }} />
                 </Grid>
-                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={email} onChange={(e)=>{setEmail(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Email" sx={{ width: "100%" , input: { color: 'white' }}} />
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "20px" }}>
+                  <TextField rows={4} multiline  value={message} onChange={(e)=>{setMessage(e.target.value)}} required id="standard-basic" variant="outlined" placeholder="Message" sx={{ width: "100%" }} />
                 </Grid>
-                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={phone} inputProps={{pattern:'[0-9]'}} onChange={(event)=>{const inputValue = event.target.value;const numericValue = inputValue.replace(/[^0-9]/g, '');setPhone(numericValue)}} id="standard-basic" variant="standard" placeholder="Number" sx={{ width: "100%", input: { color: 'white' }}} />
-                </Grid>
-                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={message} onChange={(e)=>{setMessage(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Message" sx={{ width: "100%", input: { color: 'white' } }} />
-                </Grid>
-                <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "20px" ,justifyContent:"start",display:"flex",alignItems:"center"}}>
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "20px" ,justifyContent:"end",display:"flex",alignItems:"end"}}>
                 <div style={{color:"red"}}>{error}</div>
                 </Grid>
-                <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "30px" ,justifyContent:"center",display:"flex",alignItems:"center"}}>
+                <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "10px" ,justifyContent:"end",display:"flex",alignItems:"end"}}>
                   
-                  <Button onClick={check} sx={{ backgroundColor: "#C61414", color: "white",fontWeight :"bold ", borderRadius: 20, padding: "5px", width: "30%", "&:hover": { backgroundColor: "#C61414", color: "white", borderRadius: 20, padding: "5px", width: "30%" } }}>
+                  <Button onClick={check} sx={{ backgroundColor: "blue", color: "white",fontWeight :"bold ", borderRadius: 10, padding: "5px", width: "30%", "&:hover": { backgroundColor: "blue", color: "white", borderRadius: 20, padding: "5px", width: "30%" } }}>
                     Send
                   </Button>
                   
@@ -165,8 +148,8 @@ export default function Contact() {
               </Grid>
 
             </Grid>
-            <Grid item md={4}></Grid>
           </Grid>
+          </div>
         </Grid>
       </Grid>
       </FormControl>
