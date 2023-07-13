@@ -81,7 +81,7 @@ export default function Contact() {
     <div style={{backgroundColor:"", paddingBottom:'20px',paddingTop:"20px"}}>
       <FormControl>
       <Grid container rowSpacing={3} sx={{backgroundColor:""}}>
-        <Grid item md={7} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
+        <Grid item md={5} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
           <Grid container>
             <Grid item md={3} sm={1} xs={1}></Grid>
             <Grid item md={8} sm={10} xs={10} >
@@ -121,9 +121,9 @@ export default function Contact() {
             <Grid item md={1} sm={1} xs={1}></Grid>
           </Grid>
         </Grid>
-        <Grid item md={5} sx={{ paddingTop: "0px" }}>
+        <Grid item md={7} sx={{justifyContent:"center",display:'flex',alignItems:"center"}}>
             <div class="bg-gray-200 " style={{padding:"40px",width:"60%",borderRadius:20}}>
-          <Grid container>
+          <Grid container >
             <Grid item md={12} className='contactus' >
               <Grid container>
                 <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "20px" }}>
