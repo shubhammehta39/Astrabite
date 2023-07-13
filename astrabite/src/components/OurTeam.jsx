@@ -19,7 +19,7 @@ let config = {
 async function makeRequest() {
   try {
     const response = await axios.request(config);
-    console.log((response.data));
+    //console.log((response.data));
     setData(response.data);
   }
   catch (error) {

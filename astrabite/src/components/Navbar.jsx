@@ -13,7 +13,6 @@ export default function Navbar() {
   const handleScroll = () => {
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
-    console.log(scrollY);
     if (scrollY < 200) {
       setS(0);
     } else if (scrollY >= 200) {
