@@ -89,7 +89,7 @@ export default function Contact() {
                 Contact Information
               </Typography>
               <Typography variant='h5' sx={{  fontSize: "20px", fontWeight: "100",color:"white",paddingTop:"10px" }}>
-                Any questions or reamrks...
+                Any questions or remarks...
               </Typography>
               <Typography variant="h5" sx={{  fontSize: "20px" ,color:"white"}}>
                 Just write us a message!!
@@ -102,7 +102,7 @@ export default function Contact() {
                 <EmailIcon sx={{ color: "blue" }}></EmailIcon>
               </IconButton>
               <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"white" }}>
-                hrastrabite@gmail.com
+                hr@astrabite.com
               </div>
               <div>
                 <IconButton>
