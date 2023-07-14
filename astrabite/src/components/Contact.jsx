@@ -12,7 +12,7 @@ export default function Contact() {
 
   const [name,setName]=useState("");
   const [email,setEmail]=useState("");
-  const [phone,setPhone]=useState("");
+  //const [phone,setPhone]=useState("9999999999");
   const [message,setMessage]=useState("");
   const [error,setError]=useState("");
 
@@ -25,10 +25,6 @@ export default function Contact() {
       else if(email=="")
       {
         setError("*Email is required");
-      }
-      else if(phone=="")
-      {
-        setError("*Phone is required");
       }
       else if(message=="")
       {
@@ -43,11 +39,11 @@ export default function Contact() {
   }
   const submit = () => {
     //const FormData = require('form-data');
-    let ph="+91"+phone;
+    //let ph="+91"+phone;
     let data = new FormData();
     data.append('name', name);
     data.append('email', email);
-    data.append('phone', ph);
+    //data.append('phone', ph);
     data.append('message', message);
     
     
@@ -61,10 +57,9 @@ export default function Contact() {
     async function makeRequest() {
       try {
         const response = await axios.request(config);
-        //console.log((response.data));
+        console.log((response.data));
         setEmail("");
         setName("");
-        setPhone("");
         setMessage("");
       }
       catch (error) {
