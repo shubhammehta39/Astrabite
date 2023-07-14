@@ -19,7 +19,7 @@ let config = {
 async function makeRequest() {
   try {
     const response = await axios.request(config);
-    console.log((response.data));
+    //console.log((response.data));
     setData(response.data);
   }
   catch (error) {
@@ -35,12 +35,12 @@ makeRequest();
   return (
     <>
     <h3 class='pb-20 font-bold text-5xl px-20'>Meet our Team</h3>
-      <Grid container spacing={3} sx={{justifyContent:"center",display:"flex",alignItems:"center",paddingLeft:"50px"}}>
+      <Grid container spacing={0} sx={{justifyContent:"center",alignItems:"center",display:"flex"}}>
         {data?<>
         {data.map((item)=>{
           return(
             <>
-            <Grid item md={4} xs={12} sm={12}>
+            <Grid item md={4} xs={12} sm={12} sx={{justifyContent:"center",alignItems:"center",display:"flex"}}>
         <div class="p-10">
       
       <div class="card">
