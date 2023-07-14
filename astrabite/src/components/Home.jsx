@@ -1,9 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 const Home = () => {
+  const [data, setData] = useState()
+  useEffect(() => {
+
+let config = {
+  method: 'get',
+  maxBodyLength: Infinity,
+  url: 'https://astrabyte.pythonanywhere.com/images/',
+  headers: { }
+};
+
+axios.request(config)
+.then((response) => {
+  console.log((response.data[0].image));
+  setData(response.data)
+})
+.catch((error) => {
+  console.log(error);
+});
+
+  }, [])
+  
   return (
     <>
+    {data?<>
+    
       <div className="mt-12 px-5 sm:px-10">
         <h3 className="text-5xl font-bold px-9  ">About US</h3>
 
@@ -34,7 +59,7 @@ const Home = () => {
             >
               <img
                 className="mb-5 sm:mb-10"
-                src="/src/assets/images.png"
+                src={data[0].image}
                 alt="wc"
                 style={{ height: "280px", width: "240px", marginLeft: "30px" }}
               />
@@ -42,6 +67,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+    </>:<></>}
+      
     </>
   );
 };
