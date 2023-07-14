@@ -24,6 +24,66 @@ background: linear-gradient(to top, #3c1053, #ad5389); */
 background-color: black;
 
 }
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animated-div {
+  width: 240px;
+  height: 280px;
+  margin-left: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.animated-div {
+  animation: sexyAnimation 2s infinite ease-in-out;
+}
+
+@keyframes sexyAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+    border-radius: 20%;
+  }
+  25% {
+    transform: scale(1.2) rotate(0deg);
+    border-radius: 20%;
+  }
+  50% {
+    transform: scale(1.2) rotate(270deg);
+    border-radius: 50%;
+  }
+  75% {
+    transform: scale(1.2) rotate(270deg);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    border-radius: 20%;
+  }
+}
+
+
+.animated-text {
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
 
 a {
   font-weight: 500;
