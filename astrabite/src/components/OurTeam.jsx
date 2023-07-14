@@ -35,6 +35,7 @@ makeRequest();
   return (
     <>
     <h3 class='pb-20 font-bold text-5xl px-20'>Meet our Team</h3>
+    
       <Grid container spacing={0} sx={{justifyContent:"center",alignItems:"center",display:"flex"}}>
         {data?<>
         {data.map((item)=>{

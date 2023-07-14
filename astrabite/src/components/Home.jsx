@@ -54,7 +54,7 @@ axios.request(config)
           >
             <div
               className="flex flex-items "
-              style={{ paddingBottom:"100px" }}
+              style={{ marginBottom:"20px", paddingLeft:"50px" }}
             >
               <div className="mt-12">
                 <motion.div
