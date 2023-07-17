@@ -1,5 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 export default function Navbar() {
   const [s, setS] = React.useState(0);
   const [st, setSt] = React.useState(0);
@@ -70,26 +72,26 @@ border: "1px solid rgba( 255, 255, 255, 0.18 )",
         <nav class="w-4/5 flex justify-between items-center font-bebas">
           <h1 class="text-3xl text-color-black">Astrabite</h1>
           <ul class="md:flex gap-x-5 text-xl hidden">
-            <a href="#">
+            <Link activeClass='active' to='aboutlink' spy={true} smooth={true} offset={0} duration={500}>
               <li class="cursor-pointer">
                 <div style={s1}>About Us</div>
               </li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link activeClass='active' to='teamlink' spy={true} smooth={true} offset={0} duration={500}>
               <li class="cursor-pointer">
                 <div style={s2}>Team</div>
               </li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link activeClass='active' to='servicelink' spy={true} smooth={true} offset={0} duration={500}>
               <li class="cursor-pointer">
                 <div style={s3}>Services</div>
               </li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link activeClass='active' to='contactlink' spy={true} smooth={true} offset={0} duration={500}>
               <li class="cursor-pointer">
                 <div style={s4}>Contact Us </div>
               </li>
-            </a>
+            </Link>
           </ul>
         </nav>
       </header>

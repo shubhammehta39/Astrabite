@@ -7,16 +7,17 @@ import Home from './components/Home';
 import Services from './components/Services';
 import OurTeam from './components/OurTeam';
 import Contact from './components/Contact';
+import { Link, animateScroll as scroll } from 'react-scroll';
 function App() {
 
   return (
     <>
     <Navbar/>
-    <About/>
-    <Home/>
-    <OurTeam/>
-    <Services/>
-    <Contact/>
+    <About id='aboutlink'/>
+    <Home id='homelink'/>
+    <OurTeam id='teamlink'/>
+    <Services id='servicelink'/>
+    <Contact id='contactlink'/>
     </>
   )
 }
