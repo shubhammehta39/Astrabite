@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link, animateScroll as scroll } from 'react-scroll';
-
 export default function Navbar() {
   const [s, setS] = React.useState(0);
   const [st, setSt] = React.useState(0);
@@ -15,18 +14,19 @@ export default function Navbar() {
   const handleScroll = () => {
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
+    console.log(scrollY);
     if (scrollY < 200) {
       setS(0);
     } else if (scrollY >= 200) {
       setS(1);
     }
-    if(scrollY<400){
+    if(scrollY<800){
       setSt(1);
     } 
-    if (scrollY>=400 && scrollY < 950) {
+    if (scrollY>=800 && scrollY < 1370) {
       setSt(2);
     }
-    else if (scrollY >=950 && scrollY < 1400) {
+    else if (scrollY >1370 && scrollY < 1800) {
       setSt(3);
     }
     else if (scrollY >= 1350  ) {
@@ -67,6 +67,7 @@ border: "1px solid rgba( 255, 255, 255, 0.18 )",
   }
 
   return (
+    <>
     <div style={{position:"sticky",zIndex:"5  ",top:0,backgroundColor:"",paddingTop:"0px"}}>
       <header class="w-full h-16 flex justify-center  " style={style}>
         <nav class="w-4/5 flex justify-between items-center font-bebas">
@@ -77,12 +78,12 @@ border: "1px solid rgba( 255, 255, 255, 0.18 )",
                 <div style={s1}>About Us</div>
               </li>
             </Link>
-            <Link activeClass='active' to='teamlink' spy={true} smooth={true} offset={0} duration={500}>
+            <Link activeClass='active' to='teamlink' spy={true} smooth={true} offset={-70} duration={500}>
               <li class="cursor-pointer">
                 <div style={s2}>Team</div>
               </li>
             </Link>
-            <Link activeClass='active' to='servicelink' spy={true} smooth={true} offset={0} duration={500}>
+            <Link activeClass='active' to='servicelink' spy={true} smooth={true} offset={-400} duration={500}>
               <li class="cursor-pointer">
                 <div style={s3}>Services</div>
               </li>
@@ -96,5 +97,6 @@ border: "1px solid rgba( 255, 255, 255, 0.18 )",
         </nav>
       </header>
     </div>
+    </>
   );
 }
