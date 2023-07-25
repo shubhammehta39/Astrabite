@@ -1,23 +1,31 @@
 
 import './App.css'
-import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './components/About'
 import Home from './components/Home';
 import Services from './components/Services';
 import OurTeam from './components/OurTeam';
 import Contact from './components/Contact';
-import { Link, animateScroll as scroll } from 'react-scroll';
 function App() {
 
   return (
     <>
     <Navbar/>
+    <div id='aboutlink'>
     <About id='aboutlink'/>
+    </div>
+    <div id='homelink'>
     <Home id='homelink'/>
-    <OurTeam id='teamlink'/>
+    </div>
+    <div id='teamlink'>
+      <OurTeam id='teamlink'/>
+    </div>
+    <div id='servicelink'>
     <Services id='servicelink'/>
+    </div>
+    <div id='contactlink'>
     <Contact id='contactlink'/>
+    </div>
     </>
   )
 }
