@@ -12,14 +12,14 @@ const OurTeam = () => {
 let config = {
   method: 'get',
   maxBodyLength: Infinity,
-  url: 'https://astrabyte.pythonanywhere.com/slave/',
+  url: 'https://astrabyte.pythonanywhere.com/people/',
   headers: { }
 };
 
 async function makeRequest() {
   try {
     const response = await axios.request(config);
-    //console.log((response.data));
+    console.log((response.data));
     setData(response.data);
   }
   catch (error) {
@@ -50,7 +50,7 @@ makeRequest();
     <p class="title">{item.name}<br /><span>{item.exp}</span></p>
     <ul class="sci">
       <li>
-        <a href="#">
+        <a href={item.fb_id} target='_blank'>
           <svg class="fa-brands fa-facebook" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
         </a>
       </li>

@@ -16,7 +16,6 @@ let config = {
 
 axios.request(config)
 .then((response) => {
-  console.log((response.data[0].image));
   setData(response.data)
 })
 .catch((error) => {
