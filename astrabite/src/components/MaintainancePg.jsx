@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, CircularProgress } from "@mui/material";
+import './shi.css';
 
 const MaintainancePg = () => {
   return (
@@ -14,7 +15,7 @@ const MaintainancePg = () => {
         backgroundColor: "#f5f5f5",
       }}
     >
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -23,9 +24,16 @@ const MaintainancePg = () => {
           backgroundColor: "white",
           borderRadius: 4,
           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-        }}
-      >
-        <CircularProgress size={64} color="error" />
+        }
+      } /> */}
+
+        <div className="animation">
+        <div className="one spin-one"></div>
+        <div className="two spin-two"></div>
+        <div className="three spin-one"></div>
+       </div>
+      
+        {/* <CircularProgress size={64} color="error" /> */}
         <Typography variant="h5" component="h1" align="center" mt={2} style={{color:'black' , paddingTop:'10px', paddingBottom:'10px'}}>
           Maintenance in Progress
         </Typography>
@@ -34,7 +42,7 @@ const MaintainancePg = () => {
           undergoing maintenance. Please check back later.
         </Typography>
       </Box>
-    </Box>
+    {/* </Box> */}
     </div>
   )
 }
