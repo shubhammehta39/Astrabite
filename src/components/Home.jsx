@@ -4,7 +4,7 @@ import logo1 from '../assets/logo1.png'
 import astraunot from '../assets/astraunot.mp4'
 export default function Home() {
   return (
-    <div style={{height:'200vh'}}>
+    <div style={{height:'100vh'}}>
       <Grid container sx={{backgroundColor:"black" ,height:'100vh' , paddingTop:'1  0%'}}>
         <Grid item md={5} sx={{paddingTop:'10%'}}>
         <video autoPlay loop muted className="video">
