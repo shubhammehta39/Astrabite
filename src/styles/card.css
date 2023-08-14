@@ -1,0 +1,97 @@
+.video-list {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .video-item {
+    width: 310px;
+    height: 390px;
+    border: 5px double #8bb78b;
+    margin-right: 20px;
+  }
+  
+  .video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vdo,
+  .video-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .vdo {
+    z-index: 1;
+  }
+  
+  .video-image {
+    z-index: 2;
+    transition: opacity 0.5s; /* Adding transition for smooth fading */
+    opacity: 1; /* Show image by default */
+  }
+  
+  .bg {
+    position: absolute;
+    top: 0;
+    width: 310px;
+    height: 390px;
+    z-index: 3; /* Increased z-index to place it above the video/image */
+  }
+  
+  .red {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.1));
+  }
+  
+  .green {
+    background-image: linear-gradient(to right, rgba(0, 255, 0, 0.1), rgba(0, 255, 0, 0.1));
+  }
+  
+  .blue {
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.1));
+  }
+  
+  .name {
+    position: absolute;
+    left: 0;
+    top: 33%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 4; /* Increased z-index to place it above the video/image */
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 1s;
+  }
+  
+  .name h2 {
+    font-size: 6em;
+    margin: 0;
+  }
+  
+  .name p {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  .video:hover .name {
+    opacity: 0.5;
+  }
+  
+  /* Hide the video when hovering over it to show the image */
+  .video:hover .vdo {
+    opacity: 0;
+  }
+  
+  /* Show the image when not hovering */
+  .video:not(:hover) .video-image {
+    opacity: 1;
+  }
+  
