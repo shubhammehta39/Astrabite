@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 import '../styles/servicedetail.css'
-import Apex from '../assets/Apex world.png'
+import Apex from '../assets/Apexworld.png'
 import Buttons from '../assets/Buttons.jpg'
 export default function Servicedetail() {
   return (
