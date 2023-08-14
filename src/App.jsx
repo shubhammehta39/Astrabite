@@ -4,14 +4,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Intro from './components/Intro';
+import Servicedetail from './components/Servicedetail';
 function App() {
 
   return (
     <>
+        
       <Router>
-        <Navbar/>
-        <Home/>
-        <Footer/>
+        <Routes>
+          <Route path='/' element={<Intro/>}></Route>
+          <Route path='/servicedesc' element={<Servicedetail/>}></Route>
+        </Routes>
       </Router>  
     </>
   )

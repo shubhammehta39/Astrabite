@@ -12,13 +12,13 @@ export default function Navbar() {
                 <div >About Us</div>
               </li>
               <li class="cursor-pointer">
-                <div >Team</div>
+                <div >3D Printing</div>
               </li>
               <li class="cursor-pointer">
-                <div >Services</div>
+                <div >Gaming</div>
               </li>
               <li class="cursor-pointer">
-                <div >Contact Us </div>
+                <div >Studios</div>
               </li>
           </ul>
         </nav>
