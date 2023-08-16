@@ -3,14 +3,15 @@ import "./final.css";
 
 const Final = () => {
   return (
-    <div className="hi">
-      <div style={{ display: "flex", flexDirection: "column", gap: "100px" }}>
+    // <div className="hi">
+      <div style={{ display: "flex", flexDirection: "column", gap: "150px" , marginTop:'5%' , paddingLeft:'5%'}}>
+
         <div>
           <div className="container">
-            <div className="background-image"></div>
+            <div className="background-image1"></div>
             <div className="content">
               <div className="image-div">
-                <img src="../src/assets/char.png" alt="Content"  style={{ width: '80%', height: 'auto' }} />
+                <img src="../src/assets/char.png" alt="Content"  style={{ width: '80%' }} />
               </div>
               {/* <div className="image-div ">
             <img src="../src/assets/banner.png" alt="Content" />
@@ -29,9 +30,10 @@ const Final = () => {
             </div>
           </div>
         </div>
+
         <div>
           <div className="container">
-            <div className="background-image"></div>
+            <div className="background-image2   "></div>
             <div className="content">
             <div className="text-div">
                 <h1 class="text-7xl font-bold font-stretch-10px text-center align-center justify-center">
@@ -79,8 +81,9 @@ const Final = () => {
             </div>
           </div>
         </div>
+
       </div>
-    </div>
+    // </div>
   );
 };
 

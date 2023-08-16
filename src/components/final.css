@@ -1,77 +1,106 @@
 /* Styling for the container */
-.hi{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
+.hi {
+  width: 100%;
+  height: 100%;
+  /* align-items: center;
+    justify-content: center; */
+  margin: 0px;
 }
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  /* Background image */
-  .background-image {
-    /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fnewsbeat-52697358&psig=AOvVaw2A8HlybCOWqSluiWWpqefD&ust=1692254236213000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiQ2rbI4IADFQAAAAAdAAAAABAE'); */
-    background-image: url('../src/assets/11.jpg');
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
-    margin-left: 20%;
-    
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 90%;
-    height: 70%;
-    z-index: -1;
-  }
-  
-  /* Main content container */
-  .content {
-    margin-left: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    /* opacity: 30%; */
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  /* Div for the image */
-  .image-div {
-    flex: 1;
-    padding: 20px;
-   
-  }
-  /* .images-div {
+  display: flex;
+  justify-content: flex-start;
+
+  /* align-items: center;
+    justify-content: center; */
+}
+
+/* Background image */
+.background-image {
+  /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fnewsbeat-52697358&psig=AOvVaw2A8HlybCOWqSluiWWpqefD&ust=1692254236213000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiQ2rbI4IADFQAAAAAdAAAAABAE'); */
+  background-image: url("../src/assets/11.jpg");
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 18px 50px 0 rgb(226 226 226 / 37%);
+
+
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  z-index: -1;
+}
+.background-image1 {
+  /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fnewsbeat-52697358&psig=AOvVaw2A8HlybCOWqSluiWWpqefD&ust=1692254236213000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiQ2rbI4IADFQAAAAAdAAAAABAE'); */
+  background-image: url("../src/assets/bg1.jpg");
+  border-radius: 5px;
+  box-shadow: 0 18px 50px 0 rgb(226 226 226 / 37%);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  z-index: -1;
+}
+.background-image2 {
+  /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fnewsbeat-52697358&psig=AOvVaw2A8HlybCOWqSluiWWpqefD&ust=1692254236213000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiQ2rbI4IADFQAAAAAdAAAAABAE'); */
+  background-image: url("../src/assets/BG3.jpg");
+
+  border-radius: 5px;
+  box-shadow: 0 18px 50px 0 rgb(226 226 226 / 37%);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  z-index: -1;
+}
+
+/* Main content container */
+.content {
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  /* opacity: 30%; */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Div for the image */
+.image-div {
+  flex: 1;
+  justify-content: flex-start;
+
+  padding: 20px;
+}
+/* .images-div {
     flex: 3;
     padding: 20px;
     width: 120%;
   } */
-  
-  /* Div for the text description */
-  .text-div {
-    /* flex: 1; */
-    padding: 20px;
-    color: aliceblue;
-    /* margin-top: 25%; */
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Styling for the image within image-div */
-  .image-div img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Styling for the text within text-div */
-  .text-div p {
-    font-size: 18px;
-    padding-top: 20%;
-  }
-  
+
+/* Div for the text description */
+.text-div {
+  /* flex: 5; */
+  padding: 20px;
+  color: aliceblue;
+  /* margin-top: 25%; */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the image within image-div */
+.image-div img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for the text within text-div */
+.text-div p {
+  font-size: 18px;
+  padding-top: 20%;
+}
