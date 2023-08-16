@@ -4,13 +4,13 @@ import "./final.css";
 const Final = () => {
   return (
     <div className="hi">
-      <div style={{ display: "flex", flexDirection: "column", gap: "150px" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "100px" }}>
         <div>
           <div className="container">
             <div className="background-image"></div>
             <div className="content">
               <div className="image-div">
-                <img src="../src/assets/char.png" alt="Content" />
+                <img src="../src/assets/char.png" alt="Content"  style={{ width: '80%', height: 'auto' }} />
               </div>
               {/* <div className="image-div ">
             <img src="../src/assets/banner.png" alt="Content" />
@@ -45,7 +45,7 @@ const Final = () => {
                 </p>
               </div>
               <div className="image-div">
-                <img src="../src/assets/char.png" alt="Content" />
+                <img src="../src/assets/3dprinter.png" alt="Content" />
               </div>
               {/* <div className="image-div ">
             <img src="../src/assets/banner.png" alt="Content" />
@@ -59,8 +59,8 @@ const Final = () => {
           <div className="container">
             <div className="background-image"></div>
             <div className="content">
-              <div className="image-div" class="w-'25%'">
-                <img src="../src/assets/char.png" alt="Content" />
+              <div className="image-div">
+                <img src="../src/assets/char.png" alt="Content"  style={{ width: '80%', height: 'auto' }}/>
               </div>
               {/* <div className="image-div ">
             <img src="../src/assets/banner.png" alt="Content" />

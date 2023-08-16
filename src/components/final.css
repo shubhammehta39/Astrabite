@@ -33,7 +33,7 @@
   .content {
     margin-left: 30%;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
     width: 80%;
     /* opacity: 30%; */
@@ -58,7 +58,9 @@
     /* flex: 1; */
     padding: 20px;
     color: aliceblue;
-    margin-top: 25%;
+    /* margin-top: 25%; */
+    align-items: center;
+    justify-content: center;
   }
   
   /* Styling for the image within image-div */
