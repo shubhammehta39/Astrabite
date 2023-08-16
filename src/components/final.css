@@ -1,0 +1,68 @@
+/* Styling for the container */
+.hi{
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Background image */
+  .background-image {
+    /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbc.com%2Fnews%2Fnewsbeat-52697358&psig=AOvVaw2A8HlybCOWqSluiWWpqefD&ust=1692254236213000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNiQ2rbI4IADFQAAAAAdAAAAABAE'); */
+    background-image: url('../src/assets/11.jpg');
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 120%;
+    height: 90%;
+    z-index: -1;
+  }
+  
+  /* Main content container */
+  .content {
+    margin-left: 30%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 80%;
+    /* opacity: 30%; */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Div for the image */
+  .image-div {
+    flex: 1;
+    padding: 20px;
+  }
+  /* .images-div {
+    flex: 3;
+    padding: 20px;
+    width: 120%;
+  } */
+  
+  /* Div for the text description */
+  .text-div {
+    flex: 1;
+    padding: 20px;
+    color: aliceblue;
+  }
+  
+  /* Styling for the image within image-div */
+  .image-div img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Styling for the text within text-div */
+  .text-div p {
+    font-size: 18px;
+  }
+  

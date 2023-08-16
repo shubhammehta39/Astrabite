@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Intro from './components/Intro';
 import Servicedetail from './components/Servicedetail';
 import Card from './components/Card';
+import Final from './components/Final';
 function App() {
 
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path='/' element={<Intro/>}></Route>
           <Route path='/servicedesc' element={<Servicedetail/>}></Route>
           <Route path='/card' element={<Card/>}></Route>
+          <Route path='/final' element={<Final/>}></Route>
+
         </Routes>
       </Router>  
     </>
